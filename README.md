@@ -4,7 +4,7 @@
 All necessary artifacts for running QEMU with X86 processor emulation.
 
 ## Command Execution
-To launch the QEMU X86 emulator, use the following configuration:
+To launch the QEMU X86 emulator with single core, use the following configuration:
 
 ```bash
 qemu-system-x86_64 \
@@ -21,7 +21,7 @@ To launch the QEMU X86 emulator with 4 cores, use the following configuration:
 ```bash
 qemu-system-x86_64 \
     -kernel bzImage \
-    - smp 4  \
+    -smp 4  \
     -serial stdio \
     -append "console=ttyS0 nokaslr root=/dev/ram rdinit=/linuxrc noacpi" \
     -initrd rootfs.img.gz \
