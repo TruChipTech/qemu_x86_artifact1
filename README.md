@@ -13,6 +13,7 @@ qemu-system-x86_64 \
     -append "console=ttyS0 nokaslr root=/dev/ram rdinit=/linuxrc noacpi" \
     -initrd rootfs.img.gz \
     -m 512
+```
 
 
 To launch the QEMU X86 emulator with 4 cores, use the following configuration:
@@ -25,4 +26,4 @@ qemu-system-x86_64 \
     -append "console=ttyS0 nokaslr root=/dev/ram rdinit=/linuxrc noacpi" \
     -initrd rootfs.img.gz \
     -m 512
-
+```
